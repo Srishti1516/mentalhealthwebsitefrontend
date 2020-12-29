@@ -1,0 +1,207 @@
+.dashboardhead
+{
+    background-color: #006655;
+    height: 8vh;
+    color:white;
+}
+.example-container {
+  width: 250px;
+  height: 100vh;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+.example-sidenav
+{    
+    background-color: #ffffff;
+    border-right: 3px solid #006655;
+}
+.menubutton
+{
+    background-color: #006655;
+}
+.closemenubutton
+{
+    background-color: #006655;
+    float: right;
+}
+.youractivities
+{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: black;
+    border-bottom: 3px solid #006655;
+    border-radius: 0;
+}
+.youractivities:hover
+{
+    background-color: #006655;
+    border-bottom: 2px solid black;
+    color: black;
+}
+.logout 
+{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: black;
+    border-bottom: 3px solid #006655;
+    border-radius: 0;
+}
+.logout:hover
+{
+    background-color: #006655;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.editprofile
+{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: black;
+    border-bottom: 3px solid #006655;
+    border-radius: 0;
+}
+.editprofile:hover
+{
+    background-color:#006655;
+    border-bottom: 2px solid black;
+    color: black;
+}
+.activities
+{   
+   width: 100%;
+   height: 92vh;
+}
+
+.chatscard.mat-card,.tipscard.mat-card,.counsellorcard.mat-card
+{
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    margin-top:5vh !important;
+    border-radius: 10px;
+    border: 2px solid #006655;
+   
+}
+.chats,.tips_received,.counsellor_consulted
+{   
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 5px solid #006655;
+    box-shadow: 2px 2px 5px 5px #eeeeee;
+    overflow: auto;
+}
+.activities_headtag
+{
+    width: 100%;
+    height: 10%;
+    background-color: #006655;
+    color: #ffffff;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    height: 5vh;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.carddiv
+{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 11vh !important;
+}
+.profilepic
+{
+    border: 3px solid black;
+    padding: 20px;
+}
+.edit
+{
+    width: 100%;
+    margin-top: 50px    ;
+}
+::-webkit-scrollbar 
+{
+  width: 10px;
+}
+::-webkit-scrollbar-track
+{
+  background: #006655;
+}
+::-webkit-scrollbar-thumb 
+{
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover
+ {
+  background: #555;
+}
+input[type="text"],input[type="tel"],input[type="textarea"],input[type=""]
+{
+    color: black !important;
+    width: 200px;
+}
+mat-label
+{
+    color: black !important;
+    font-size: 1rem;
+}
+
+.name,.email,.contact,.occupation
+{
+    width: 450px;
+}
+.address
+{
+    width: 90%;
+}
+.profile
+{
+    border: 4px solid black;
+    padding: 20px;
+}
+.content
+{
+    color: black !important;
+}
+mat-form-field
+{
+    padding: 20px;
+   
+}
+.save
+{   
+    width: 100%;
+    margin: auto;
+}
+.savebutton
+{
+    width: 100%;
+    background-color: #006655;
+    color: #ffffff;
+}
+.savebutton:hover
+{
+    background-color: #ffffff;
+    color: #000000;
+}
+.editcard
+{
+    width:100%;
+    height:70vh;
+    margin:auto;
+}
+
+.profile_content_inside
+{
+    width: auto;
+    height: auto;
+    float: right;
+}
+

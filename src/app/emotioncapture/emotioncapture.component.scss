@@ -1,0 +1,42 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body
+{
+    overflow: hidden;
+}
+h1
+{
+    color: #006655;
+    font-weight: bold;
+    animation: blink 3s infinite ease-in-out;
+    margin-top: 20px;
+    position: absolute;
+    left: 40%;
+}
+@keyframes blink
+{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+.frame
+{
+    width: 80%;
+    height:100vh;
+    margin: auto;
+    z-index: 0;
+}
+.camera
+{
+    position: absolute;
+    top: 25%;
+    left:27.5% ;
+    z-index: 9899999;
+    width: 37.4vw;
+    height: 46vh;
+}

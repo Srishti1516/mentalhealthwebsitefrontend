@@ -1,0 +1,79 @@
+<mat-dialog-content class="modalsignup">
+  <!-- <form class="form"> -->
+    <button mat-icon-button mat-dialog-close class="closebutton"><mat-icon>clear</mat-icon></button>
+  <h2>CREATE MY ACCOUNT</h2>
+    <div class="formelements">
+      <mat-vertical-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <ng-template matStepLabel>Basic Details</ng-template>
+        <div class="mainfirstpart">   
+       <input type="text" required  [(ngModel)]="formdata.fullName" id="defaultRegisterFormFirstName" #fullName="ngModel" placeholder="Full Name" class="userinput">
+             <div *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)" class="errorsvalidation">
+             <div *ngIf="fullName.errors.required">*Name is required</div>
+          </div> 
+          <br>
+        <input required email type="email" [(ngModel)]="formdata.email" id="defaultRegisterFormEmail" #email="ngModel" required placeholder="Email" class="userinput">
+         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="errorsvalidation">
+          <div *ngIf="email.errors.required">*Email is required</div>
+          <div *ngIf="email.errors.email">*Email must be a valid email address</div>
+      </div> 
+      <br>
+      <input required minlength="6" type="password" [(ngModel)]="formdata.password" name="password" #password="ngModel" placeholder="Password" class="userinput">
+       <div *ngIf="password.invalid  && (password.dirty || password.touched)" class="errorsvalidation">
+        <div *ngIf="password.errors.required">*Password is required</div>
+        <div *ngIf="password.errors.minlength">*Mimimum Characters - 6</div>
+    </div> 
+    <br>
+    <input type="password" [(ngModel)]="formdata.confirmpassword" #confirmpassword="ngModel"  name="confirmpassword" placeholder="Confirm Password" class="userinput">
+      <div *ngIf="confirmpassword.touched" class="errorsvalidation">
+        <span *ngIf="confirmpassword.value!=password.value">*Passwords do not match</span>
+      </div> 
+    </div>
+
+      <!-- <div>
+        <button mat-button class="stepper-buttons" matStepperNext>Next</button>
+      </div> -->
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <ng-template matStepLabel>Other details</ng-template>
+
+        <input required type="date" class="date" placeholder="MM/DD/YYYY" [(ngModel)]="formdata.dob" #dob="ngModel">
+        
+        <div *ngIf="dob.invalid && (dob.dirty || dob.touched)" class="errorsvalidation1">
+          <div *ngIf="dob.errors.required">*DOB is required</div>
+        </div>
+        <br>  
+          <input required pattern="^((\\+91-?)|0)?[0-9]{10}$" type="tel" [(ngModel)]="formdata.contact" #contact="ngModel" id="defaultRegisterFormContact"  placeholder="Contact" class="userinput1">
+         <div *ngIf="contact.invalid && (contact.dirty || contact.touched)" class="errorsvalidation">
+            <div *ngIf="contact.errors.required">*Contact is required</div>
+            <div *ngIf="contact.errors.pattern">*Invalid Phone Number</div>
+        </div> 
+          <br>
+            <input required type="text" [(ngModel)]="formdata.occupation" #occupation="ngModel" id="defaultRegisterFormOccupation" #occupation="ngModel"  placeholder="Occupation" class="userinput1">
+           <div  *ngIf=" occupation.invalid && (occupation.dirty || occupation.touched)" class="errorsvalidation1">
+              <div *ngIf="occupation.errors.required">*Occupation is required</div>
+          </div> 
+          <br>
+            <input required type="text" [(ngModel)]="formdata.address1" #address1="ngModel" id="defaultRegisterFormAddress1"  placeholder="Address Line 1" class="userinput2">
+           <div *ngIf="address1.invalid && (address1.dirty || address1.touched)" class="errorsvalidation1">
+              <div *ngIf="address1.errors.required">*Address is required</div>
+          </div> 
+          <br>
+            <input required type="text" [(ngModel)]="formdata.address2" #address2="ngModel" id="defaultRegisterFormAddress"  placeholder="Address Line 2" class="userinput3">
+            <div *ngIf="address2.invalid && (address2.dirty || address2.touched)" class="errorsvalidation1">
+              <div *ngIf="address2.errors.required">*Address is required</div>
+          </div> 
+          <br>
+          <!-- <div>
+            <button class="stepper-buttons" mat-button matStepperPrevious>Back</button>
+          </div> -->
+        </mat-step>
+      </mat-vertical-stepper>
+    </div>
+     <div class="endcontent" >
+      <button class="btn" type="submit" (click)="onSubmit()" mat-raised-button>SIGN UP</button>
+   
+    </div>
+
+  <!-- </form> -->
+</mat-dialog-content>

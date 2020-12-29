@@ -1,0 +1,103 @@
+.foot
+{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow:5px 2px 5px 5px rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 1px 3px 0 rgba(0,0,0,.12);
+    .footlinks
+    {
+        width: 100%;
+        height: auto;
+        .socialicons
+        {
+            width: fit-content;
+            margin: auto;
+            padding: 5px 5px;
+        }
+        
+        .fa-facebook,.fa-twitter,.fa-instagram,.fa-reddit,.fa-snapchat-ghost,.fa-pinterest,.fa-google,.fa-linkedin,.fa-youtube
+        {
+            color: #006655;
+            font-size: 2rem;
+            padding: 15px;
+            text-decoration: none;
+            animation-name: social;
+            animation: social infinite;
+            animation-duration: 60s;
+            animation-timing-function: ease-in-out;
+        }
+        .fa-facebook:hover,.fa-twitter:hover,.fa-instagram:hover,.fa-reddit:hover,.fa-snapchat-ghost:hover,.fa-pinterest:hover,.fa-google:hover,.fa-linkedin:hover,.fa-youtube:hover
+        {
+            transform: rotate(360deg);
+            animation-duration: 1s;
+        }
+        
+        .buttonsalt
+        {
+            width: fit-content;
+            margin: auto;
+            padding: 5px 5px;
+           
+            .x
+            {
+                border: none;
+                padding: 10px 10px;
+                width: 100px;
+                margin-left: 10px;
+                border: 2px solid #006655;
+                background-color: #ffffff;
+                
+            }
+            .x:hover
+            {
+                background-color:#006655;
+                color: #ffffff;
+                
+            }
+            
+        }
+    }
+    .address
+    {
+        width: 100%;
+        display: flex;
+        .addresstext 
+        {
+           width: fit-content;
+           margin: auto;
+           font-size: 1em;
+           color: #006655;
+           font-weight: 600;
+           
+        }
+    }
+    .copyright
+    {
+        width: 100%;
+    }
+    .copyrighttext
+    {
+         width: fit-content;
+         margin: auto;
+         font-weight: bold;
+    }
+}
+
+@keyframes social
+{
+    from
+    {
+        transform: rotate(-360deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+::ng-deep .mat-tooltip
+{
+    color: #ffffff;
+    background-color: #006655;
+    padding: 10px;
+    font-weight: bold;
+}

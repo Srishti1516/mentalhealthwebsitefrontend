@@ -1,0 +1,51 @@
+
+<div class="parent">
+   <p>Mental Health Statistics</p>
+</div>
+
+<mat-tab-group  (selectedTabChange)="load($event)">
+   <mat-tab *ngIf="true"  > 
+      <ng-template mat-tab-label>
+         <mat-icon> accessible_forward </mat-icon>&nbsp;Age Morbidity Chart
+      </ng-template>
+      
+      <div *ngIf="chart1" class="a" style="height:auto;width:700px;">
+         <mat-card>
+         <canvas id="canvas">{{ chart1 }}</canvas>
+         </mat-card>
+      </div>
+     
+   </mat-tab>
+
+   <mat-tab >
+      <ng-template mat-tab-label>
+         <mat-icon> bar_chart </mat-icon>&nbsp;State Disorder Chart
+      </ng-template>
+      <div *ngIf="chart2"  class="b" style="height:auto;width:700px;">
+         <mat-card>
+         <canvas id="canvas1">{{ chart2 }}</canvas>
+         </mat-card>
+      </div>
+   </mat-tab>
+
+   <mat-tab *ngIf="true">
+      <ng-template mat-tab-label>
+         <i class='fas fa-book-dead fa-lg'> </i>&nbsp;Suicidal Risk Chart
+      </ng-template>
+      <div *ngIf="chart3" class="c" style="height:auto;width:700px;">
+         <mat-card>
+         <canvas id="canvas2">{{ chart3 }}</canvas>
+         </mat-card>
+      </div>
+   </mat-tab>
+   <mat-tab *ngIf="true">
+      <ng-template mat-tab-label>
+         <i class='fas fa-hand-holding-heart fa-lg'> </i>&nbsp;Mental Health Human Resources Chart
+      </ng-template>
+      <div *ngIf="chart4" class="d" style="height:auto;width:700px;">
+         <mat-card>
+         <canvas id="canvas3">{{ chart4 }}</canvas>
+         </mat-card>
+      </div>
+   </mat-tab>
+</mat-tab-group>

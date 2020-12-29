@@ -1,0 +1,179 @@
+
+.toolbar{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: xx-large;
+    height: 3cm;
+    font-family: Helvetica;
+    position: absolute;
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000;
+}
+.logo{
+    position: relative;
+    left:-20px;
+    height:70%;
+    width:10%;
+    top:5px;
+}
+.titlee{
+    position: relative;
+    top:-20px;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caption{
+    position: relative;
+    left: -180px;
+    top: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: italic;
+    
+}
+.signup{
+    flex: 1 1 auto;
+}
+
+.usercontrol{
+    padding:10px;
+}
+
+.name{
+    padding:20px;
+}
+
+
+.login{
+    background-color: #ffffff;
+    color:#006655;
+    padding:15px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.login:hover{
+   background-color: #006655;
+   color:#ffffff;
+}
+input{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 80%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+    position: relative;
+    left:50px;
+    top:-50px;
+}
+img{
+    height:200px;
+    width:200px;
+    position: relative;
+    left:150px;
+    top:-50px;
+
+}
+
+
+.invalid-feedback{
+    color: red;
+    position: relative;
+    top:-50px;
+    left:50px;
+}
+.invalid-feedback1{
+    color: red;
+    position: relative;
+    top:-80px;
+    font-size:small;
+    left:50px;
+}
+::placeholder{
+    text-align: center;
+    color:#006655;
+}
+.signupfooter
+{
+    width: 0;
+    
+    transform: translateX(50%);
+
+}
+.signup
+{
+    background-color: white;
+    color: #006655;
+    margin-left: 180px;
+}
+.resetpassword.btn
+{
+    background-color: white !important;
+    color: #006655 !important;
+    margin-left: 30px;
+    outline: none !important;
+    border: none;
+}
+.resetpassword.btn:hover
+{
+    color: #000000 !important;
+}
+
+.signup:hover,.resetpassword:hover
+{
+    background-color: #006655;
+    color: white;
+}
+.toggle{
+    position: relative;
+    top:-90px;
+    left:380px;
+}
+.btnn{
+    position: relative;
+    top:-50px;
+    background-color: #006655;
+    color: #ffffff;
+}
+
+.menubar{
+position: relative;
+left:-600px;
+top:30px;
+font-size: x-large;
+}
+.emaildiv
+{
+    width: 100%;
+}
+.otpdiv
+{
+    width: 100%;
+}
+.btn.getotp
+{
+    background-color: #006655;
+    color: white;
+    outline: none !important;
+    border: 1px solid #006655;
+}
+
+.btn.getotp:hover
+{
+    background-color: white;
+    color: #006655;
+    outline: none !important;
+    border: 1px solid #006655;
+}
+
+

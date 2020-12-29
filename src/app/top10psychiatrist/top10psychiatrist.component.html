@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+</head>
+<mat-toolbar class="dashboardhead">
+  <div class="profile_content_middle_headtag">
+    <p>TOP PSYCHIATRISTS & COUNSELLORS</p>
+  </div>
+</mat-toolbar>
+
+<body class="body">
+    
+      <div class="card card-flip cardlay mat-elevation-z4" *ngFor="let i of list">
+        <div class="card-front counsellor">
+            <div class="card-body ">
+                <h3 class="card-title">{{ i.name }}</h3>
+                <img class="headerimage" src="{{ i.profile_pic }}"  alt="Photo">
+                <p class="card-text">OCCUPATION - {{ i.occupation }}</p>
+            </div>
+        </div>
+        <div class="card-back counsellor1">
+            <div class="card-body">
+              <span class="card-text">Years of Experience - {{ i.years_of_exp }}</span><br>
+              <span class="card-text">Contact - {{ i.contact }}</span><br>
+              <span class="card-text">Address - {{ i.address }}</span><br>
+              <div class=star *ngIf="i.ranking=='1'">
+                <mat-icon>star</mat-icon>
+             </div>
+             <div class=star *ngIf="i.ranking=='2'">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+           </div>
+           <div class=star *ngIf="i.ranking=='3'">
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+         </div>
+              <div class=star *ngIf="i.ranking=='4'">
+                 <mat-icon>star</mat-icon>
+                 <mat-icon>star</mat-icon>
+                 <mat-icon>star</mat-icon>
+                 <mat-icon>star</mat-icon>
+              </div>
+              <div class=star *ngIf="i.ranking=='5'">
+                <mat-icon>star</mat-icon>
+                <mat-icon>star</mat-icon>
+                <mat-icon>star</mat-icon>
+                <mat-icon>star</mat-icon>
+                <mat-icon>star</mat-icon>
+             </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

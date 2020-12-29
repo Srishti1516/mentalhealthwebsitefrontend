@@ -1,0 +1,391 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<mat-tab-group dynamicHeight>
+  <mat-tab >
+    <ng-template mat-tab-label>
+      <mat-icon><img height=30px src="../assets/depressionicon.png"></mat-icon> DEPRESSION
+    </ng-template>
+    <div class="card-group ">
+      <div class="card tp-card mat-elevation-z4">
+        <div class="card-body ">
+          <img mat-card-image class="card-img-top" src = "../assets/depression.png">
+        </div>
+      </div>
+      <div class="card example-small-box mat-elevation-z4">
+        <div class="card-body">
+          <h1>DEPRESSION</h1>
+      <p class="p1">Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. Also called major depressive disorder or clinical depression, it affects how you feel, think and behave and can lead to a variety of emotional and physical problems. You may have trouble doing normal day-to-day activities, and sometimes you may feel as if life isn't worth living.</p>
+      <p class="p2"> More than just a bout of the blues, depression isn't a weakness and you can't simply "snap out" of it. Depression may require long-term treatment. But don't get discouraged. Most people with depression feel better with medication, psychotherapy or both.</p>
+        </div>
+      </div>
+      <div class="card tp-card1 mat-elevation-z4">
+        <div class="card-body">
+          <h2 style="color:#006655;">Sadness is just a part of it.</h2>
+          <img mat-card-image  src = "../assets/dep.jpg">
+
+        </div>
+      </div>
+    </div>
+<div class="symptoms mat-elevation-z4" fxLayout="column" fxLayoutAlign="space-between">
+  <h2 class="symm">SYMPTOMS</h2>
+  <mat-grid-list cols="2" rowHeight="1:1" class="gridd">
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/sleep.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>SLEEPING</h2>
+      <p style="padding:10px;">You either Oversleep or feel Insomnia.</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/overeating.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>EATING</h2>
+      <p style="padding:10px;">You either eat a lot or very less.</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/weight.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>WEIGHT</h2>
+      <p style="padding:10px;">You either lose or gain weight.</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/concentration.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>FEELINGS</h2>
+      <p style="padding:10px;">Lack of Concentration, feeling lost.</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<div class="types" fxLayout="column" fxLayoutAlign="space-between">
+   <h1>TYPES OF DEPRESSION</h1>
+   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h4>MAJOR DEPRESSION DISORDER</h4>
+        <img class="d-block" src="../assets/majordepressivedisorder.png" alt="First slide">
+        <p class="typesp">Unipolar or Major Depression sets in when you are diagnosed with five or more of the typical depression symptoms. The ability to work, sleep, study, eat and experience life in general is crippled in this case.</p>
+      </div>
+      <div class="carousel-item">
+        <h4>TREATMENT RESISTANT DEPRESSION</h4>
+        <img class="d-block" src="../assets/treatmentresistive.png" alt="Second slide">
+        <p class="typesp">This form might be chronic or longstanding and it does not respond to antidepressants. Often Electroconvulsive Therapy (ECT) is applied depending on the nature and severity of the condition.
+        </p>
+      </div>
+      <div class="carousel-item">
+        <h4>PERSISTANT/CHRONIC DEPRESSION DISORDER</h4>
+        <img class="d-block slider" src="../assets/persistantchronic.png" alt="Third slide">
+        <p class="typesp">This symptom persists for at least two years during which you will be affected by episodes of major depression accompanied by at least two other depressive symptoms. Also known as Dysthymia, this chronic form of depression interferes with your ability to function.</p>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <button mat-raised-button class="othertypes" (click)="openDialog()">OTHER TYPES</button>
+</div>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon><img height=30px src="../assets/anxietyicon.png"></mat-icon> ANXIETY
+    </ng-template>
+    <div class="card-group">
+      <div class="card tp-card mat-elevation-z4">
+        <img  src = "../assets/anx.png" class="card-img-top">
+      </div>
+      <div class="card example-large-box mat-elevation-z4">
+        <div class="card-body">
+          <h1 class="card-title">ANXIETY</h1>
+          <p class="card-text">Anxiety is your body’s natural response to stress. It’s a feeling of fear or apprehension about what’s to come. The first day of school, going to a job interview, or giving a speech may cause most people to feel fearful and nervous.
+          But if your feelings of anxiety are extreme, last for longer than six months, and are interfering with your life, you may have an anxiety disorder</p>  
+          <p class="card-text">It’s normal to feel anxious about moving to a new place, starting a new job, or taking a test. This type of anxiety is unpleasant, but it may motivate you to work harder and to do a better job. Ordinary anxiety is a feeling that comes and goes, but does not interfere with your everyday life.</p>
+          </div>
+      </div>
+      <div class="card tp-card1 mat-elevation-z4">
+        <mat-card>
+          <img mat-card-image src = "../assets/anxietyimage.png">
+        </mat-card>
+      </div>
+    </div>
+  
+   
+  
+
+  <div class="symptoms mat-elevation-z4" fxLayout="column" fxLayoutAlign="space-between">
+    <h2 class="symm">SYMPTOMS</h2>
+    <mat-grid-list cols="2" rowHeight="1:1" class="gridd">
+      <mat-grid-tile>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+        <img src="../assets/stress.jpg" class="photo">
+      </div>
+      <div class="flip-box-back">
+        <h2>STRESS</h2>
+        <p style="padding:10px;">You feel extremely stressed</p>
+      </div>
+    </div>
+  </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+        <img src="../assets/tension.png" class="photo">
+      </div>
+      <div class="flip-box-back">
+        <h2>IRRITATED</h2>
+        <p style="padding:10px;">Hypervigilance, irritability, or restlessness</p>
+      </div>
+    </div>
+  </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+        <img src="../assets/fatigue.png" class="photo">
+      </div>
+      <div class="flip-box-back">
+        <h2>WHOLE BODY</h2>
+        <p style="padding:10px;">Feeling fatigue and tired.</p>
+      </div>
+    </div>
+  </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="flip-box">
+          <div class="flip-box-inner">
+            <div class="flip-box-front">
+        <img src="../assets/concentration.png" class="photo">
+      </div>
+      <div class="flip-box-back">
+        <h2>FEELINGS</h2>
+        <p style="padding:10px;">Lack of Concentration,  racing thoughts, or unwanted thoughts.</p>
+      </div>
+    </div>
+  </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <div class="types" fxLayout="column" fxLayoutAlign="space-between">
+    <h1>TYPES OF ANXIETY</h1>
+    <p>You may experience more than one type of anxiety.
+      Understanding what type of anxiety you’re experiencing is the first step to recovering.</p>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <h4>Generalized Anxiety Disorder (GAD)</h4>
+         <img class="d-block" src="../assets/gad.png" alt="First slide">
+         <p class="typesp">GAD is the most common form of anxiety. It is an extreme, intense and absurd worry usually associated with everyday life. People with GAD overly anticipate disaster about everyday things such as money, friendship, health issues, work and life.
+          The physical effects of GAD include fatigue, nausea, headaches, muscle tensions, restlessness, insomnia and sweating.
+          </p>
+       </div>
+       <div class="carousel-item">
+         <h4>Panic Disorder</h4>
+         <img class="d-block" src="../assets/panic.png" alt="Second slide">
+         <p class="typesp">If you’re experiencing recurring panic attacks, it might be possible that you are having a Panic Disorder. Panic Disorder is also accompanied by behavioral changes such as restlessness. This happens because one is overly anticipating the next panic attack.
+          The physical effects of Panic Disorder include rapid heartbeat, perspiration, dizziness, hyperventilation, chest pains and crying.
+         </p>
+       </div>
+       <div class="carousel-item">
+         <h4>Social Phobia</h4>
+         <img class="d-block slider" src="../assets/socialphobia.png" alt="Third slide">
+         <p class="typesp">You might have felt stage fear or shyness at least once in your life. It is absolutely normal. But if you’re scared of being around people altogether, you might be experiencing Social Phobia. Social Phobia is an intense fear of being in a social situation and constantly thinking of being judged by other people.
+          If you are afraid of dating, parties, meetings and hanging out with a group of people, you might be experiencing Social Phobia.</p>
+       </div>
+       <div class="carousel-item">
+        <h4>Obsessive Compulsive Disorder (OCD)</h4>
+        <img class="d-block slider" src="../assets/ocd.png" alt="Third slide">
+        <p class="typesp">If you tend to have certain thoughts or tend to do certain routines repeatedly and are unable to control them, you might be experiencing OCD. Eating only out of a particular plate maybe mild OCD, but refraining from eating if that plate is not available is acute OCD.
+          Examples of very severe cases of OCD are – washing of hands every 10 minutes and constantly checking if the door is locked. Basically an obsession that affects daily life.</p>
+      </div>
+      <div class="carousel-item">
+        <h4>Post Traumatic Stress Disorder (PTSD)</h4>
+        <img class="d-block slider" src="../assets/ptsd.png" alt="Third slide">
+        <p class="typesp">If you have experienced something unsettling in the past, physically or emotionally and keep revisiting that memory, you might be going through Post Traumatic Stress Disorder. PTSD occurs after a traumatic life event and sometimes lasts for years after the event. It is best advised to seek professional help if you think you a effected by PTSD.
+         The physical effects of PTSD include severe insomnia and constant fatigue.</p>
+      </div>
+     </div>
+     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="sr-only">Previous</span>
+     </a>
+     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="sr-only">Next</span>
+     </a>
+   </div>
+ </div>
+  </mat-tab>
+  <mat-tab >
+    <ng-template mat-tab-label>
+      <mat-icon><img height=30px src="../assets/stressicon.png"></mat-icon> STRESS
+    </ng-template>
+    <div class="card-group ">
+      <div class="card tp-card2 mat-elevation-z4">
+        <div class="card-body">
+          <img mat-card-image class="card-img-top stressed"  src = "../assets/stresstrans.png">
+        </div>
+      </div>
+      <div class="card example-small-box mat-elevation-z4">
+        <div class="card-body">
+          <h1>STRESS</h1>
+      <p class="p1">Stress is your body’s way of responding to any kind of demand or threat. When you sense danger—whether it’s real or imagined—the body’s defenses kick into high gear in a rapid, automatic process known as the “fight-or-flight” reaction or the “stress response.</p>
+      <p class="p2"> Stress can also help you rise to meet challenges. It’s what keeps you on your toes during a presentation at work, sharpens your concentration when you’re attempting the game-winning free throw, or drives you to study for an exam when you’d rather be watching TV. But beyond a certain point, stress stops being helpful and starts causing major damage to your health, mood, productivity, relationships, and your quality of life.</p>
+        </div>
+      </div>
+      <div class="card tp-card4 mat-elevation-z4">
+        <div class="card-body">
+          <h2 style="color:#006655;">Stress is not always bad unless it is extreme.</h2>
+          <img mat-card-image  src = "../assets/stressed.jpg">
+
+        </div>
+      </div>
+    </div>
+<div class="symptoms mat-elevation-z4" fxLayout="column" fxLayoutAlign="space-between">
+  <h2 class="symm">SYMPTOMS</h2>
+  <mat-grid-list cols="2" rowHeight="1:1" class="gridd">
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/concentration.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>COGNITIVE</h2>
+      <p style="padding:5px;">Memory problems
+        Inability to concentrate
+        Poor judgment
+        Seeing only the negative
+        Anxious or racing thoughts
+        Constant worrying</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/tension.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>EMOTIONAL</h2>
+      <p>Moodiness,Irritability,short temper
+        Agitation, inability to relax,Feeling overwhelmed
+        Sense of loneliness and isolation,Depression or unhappiness</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/PAIN.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>PAIN</h2>
+      <p style="padding:1px;">Aches and pains
+        Diarrhoea or constipation
+        Nausea, dizziness
+        Chest pain, rapid heartbeat
+        Loss of sex drive
+        Frequent colds</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+      <img src="../assets/bad.png" class="photo">
+    </div>
+    <div class="flip-box-back">
+      <h2>BEHAVIORAL</h2>
+      <p style="padding:1px;">Eating more or less
+        Sleeping too much or too little
+        Isolating yourself from others
+        Neglecting responsibilities
+        Alcohol, cigarettes or drugs</p>
+    </div>
+  </div>
+</div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+<div class="types" fxLayout="column" fxLayoutAlign="space-between">
+   <h1>TYPES OF STRESS</h1>
+   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h4>ACUTE STRESS</h4>
+        <img class="d-block prop" src="../assets/acute.png" alt="First slide">
+        <p class="typesp">An acute stress reaction occurs when symptoms develop due to a particularly stressful event. The word 'acute' means the symptoms develop quickly but do not usually last long. The events are usually very severe and an acute stress reaction typically occurs after an unexpected life crisis.This might be, for example, a serious accident, sudden bereavement, or other traumatic events. Road traffic accidents cause many casualties each year and you may be directly or indirectly affected by this kind of exceptionally stressful event. Acute stress reactions may also occur as a consequence of sexual assaults or domestic violence.</p>
+      </div>
+      <div class="carousel-item">
+        <h4>EPISODIC STRESS</h4>
+        <img class="d-block prop" src="../assets/episodic.jpg" alt="Second slide">
+        <p class="typesp">Episodic acute stress occurs when someone gets frequent bouts of acute stress. People with this kind of stress will oftentimes take on more responsibilities and projects than they can handle. They may seem like they're constantly in a rush, always running late, and are disorganized.People with episodic acute stress can also be hostile towards others and have strained relationships.Treatment for episodic acute stress is available both through lifestyle changes and professional help. But many people with this kind of stress don’t see anything wrong with their lives, so they may not feel the need for treatment.
+        </p>
+      </div>
+      <div class="carousel-item">
+        <h4>CHRONIC STRESS</h4>
+        <img class="d-block slider prop" src="../assets/chronic.png" alt="Third slide">
+        <p class="typesp">Chronic stress is the response to emotional pressure suffered for a prolonged period of time in which an individual perceives they have little or no control. It involves an endocrine system response in which corticosteroids are released. While the immediate effects of stress hormones are beneficial in a particular short-term situation, long-term exposure to stress creates a high level of these hormones. This may lead to high blood pressure (and subsequently heart disease), damage to muscle tissue, inhibition of growth, suppression of the immune system,[1] and damage to mental health.</p>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+    </mat-tab>
+</mat-tab-group>

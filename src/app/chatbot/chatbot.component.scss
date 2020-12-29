@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chatclass
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .heademoji
+    {
+        width: 100%;
+        height: 55vh;
+        .headtext
+        {
+            width: 100%;
+            height: auto;
+        p
+        {
+            text-align: center;
+            color: #006655;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        h5 
+        {
+            text-align: center;
+        }
+        }
+    .circleemoji
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        #Emoji:hover
+        {
+          animation: bounce 3s infinite;
+          transform-origin: center;
+        }
+    }
+    }
+    .chatcard
+    {
+        width: 100%;
+        height:45vh;
+        border-radius: 50% 50% 0 0;
+        border-top: 5px solid  #006655;
+    }
+}
+
+@keyframes bounce 
+{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+	// 0%{transform: translateY(0);}	
+	// 50% {transform: translateY(-30px);}
+    // 100% {transform: translateY(0px);}
+}

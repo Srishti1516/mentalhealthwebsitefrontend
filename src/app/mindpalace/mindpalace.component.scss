@@ -1,0 +1,28 @@
+.dashboardhead
+{
+    background-color: #006655;
+    height: 8vh;
+}
+::ng-deep.mat-tab-label
+{
+    color: #006655;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+::ng-deep .mat-ink-bar 
+{
+  background-color:#006655 !important;
+
+}
+p:nth-child(1)
+{
+    font-size: 1.7rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+iframe
+{
+    transform: translateX(50%);
+}

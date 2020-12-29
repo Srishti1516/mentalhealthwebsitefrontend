@@ -1,0 +1,105 @@
+<mat-toolbar class="dashboardhead">
+  <button mat-icon-button class="menubutton" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="profile_content_middle_headtag">
+    <p *ngIf="activitieshead">YOUR ACTIVITIES</p>
+    <p *ngIf="profilehead">EDIT PROFILE</p>
+  </div>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div class="innercontainer">
+      <button mat-icon-button class="closemenubutton" (click)="drawer.toggle()">
+        <mat-icon>close</mat-icon>
+      </button>
+      <button mat-raised-button (click)="showactivities()" class="youractivities">Your Activities</button>
+      <button mat-raised-button (click)="showaprofilecontent()" class="editprofile">Editprofile</button>
+      <button mat-raised-button class="logout" routerLink="/home">DASHBOARD</button>
+    </div>
+  </mat-drawer>
+</mat-drawer-container>
+
+<div class="activities" *ngIf="isactivities">
+  <!-- <mat-card class="chatscard">
+    <div class="chats">
+      <p class="activities_headtag">CHATS</p>
+    </div>
+  </mat-card>
+  <mat-card class="tipscard">
+    <div class="tips_received">
+      <p class="activities_headtag">TIPS RECEIVED</p>
+    </div>
+  </mat-card>
+  <mat-card class="counsellorcard">
+  <div class="counsellor_consulted">
+    <p class="activities_headtag">COUNSELLORS CONSULTED</p>
+  </div>
+  </mat-card> -->
+
+  <div *ngIf="chart1" class="a" style="height:800px;width:800px;margin: auto;margin-top:80px;">
+    <mat-card>
+    <canvas id="canvas">{{ chart1 }}</canvas>
+    </mat-card>
+ </div>
+</div>
+
+ <div class="carddiv" *ngIf="isprofile">
+<mat-card class="editcard">
+
+ 
+  <!-- <div class="profile_content_inside">
+    <div class="rightside">
+      <img src="../assets/adduser.png " class="profile" width="150px" height="150px">
+    </div><br>
+    <div class="editbutton">
+      <button mat-raised-button  style="width: 100%;">EDIT</button>
+    </div>
+  </div> -->
+
+  <div *ngIf="isprofile">
+      <mat-form-field class="name" floatLabel="always" color="primary" apperance="standard">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" [(ngModel)]="initvalues.fullName"  color="primary" placeholder="Gopal">
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-form-field class="email" floatLabel="always" color="primary">
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="initvalues.email" placeholder="Ex. pat@example.com">
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="contact" floatLabel="always">
+        <mat-label>phone</mat-label>
+        <span matPrefix>+91 &nbsp;</span>
+        <input type="tel" matInput [(ngModel)]="initvalues.contact" placeholder="555-555-1234">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="dob" floatLabel="always">
+        <mat-label>Date Of Birth</mat-label>
+        <input type="date" matInput [(ngModel)]="initvalues.dob" value="initvalues.dob" placeholder="21/12/2000">
+        <mat-icon matSuffix>close</mat-icon>
+      </mat-form-field>
+      <br>
+      <mat-form-field class="occupation" floatLabel="always">
+        <mat-label>Occupation</mat-label>
+        <input type="text" matInput [(ngModel)]="initvalues.occupation" value="initvalues.occupation">
+      </mat-form-field>
+      <mat-form-field class="address" floatLabel="always">
+        <mat-label>Address</mat-label>
+        <textarea matInput [(ngModel)]="initvalues.address" placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+      </mat-form-field>
+      <br>
+      <div class="save">
+          <button mat-raised-button class="savebutton" (click)="update()">Save</button>
+      </div>
+     
+  </div>
+
+</mat-card>
+</div>

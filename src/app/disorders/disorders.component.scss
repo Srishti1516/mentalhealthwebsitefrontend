@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+.example-small-box {
+    display: flex;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 450px;
+    width: 450px;
+    background-color: #006655;
+    color:white;
+    box-shadow: 5px 7px 13px #006655;
+    width: 30%;
+    float: left;
+  }
+
+  .example-large-box{
+    display: flex;
+    margin: 16px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    width: 450px;
+    background-color: #006655;
+    color:white;
+    box-shadow: 5px 7px 13px #006655;
+    width: 30%;
+    float: left;
+  }
+  
+  h1{
+    text-align: center;
+    color:white;
+  }
+  h2{
+    color: white;
+    text-align: center;
+  }
+  .tp-card {
+    margin: 16px;
+    max-width: 360px;
+    background-color: #ffffff;
+    color:#006655;
+    width: 30%;
+    float: left;
+ 
+ }
+ .tp-card1{
+  margin: 16px;
+  max-width: 600px;
+  background-color: #ffffff;
+  color:#006655;
+  width: 40%;
+  float: left;
+
+}
+
+.symptoms{
+  background:#ffffff;
+  color:#006655;
+  width: 600px;
+  height:600px;
+  border-radius:8px;
+  display: flex;
+  margin: 16px;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 10px 18px #C0C0C0;
+  width: 40%;
+  float: left;
+}
+
+.symm{
+  color:#006655;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+}
+
+.photo{
+  width:200px;
+  height:200px;
+}
+.gridd{
+   position: relative;
+   top:-50px;
+}
+.flip-box {
+  background-color: transparent;
+  border: 1px solid #f1f1f1;
+  width:200px;
+  height:200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #006655;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.types{
+  background-color: #006655;
+  color:white;
+  height:600px;
+  display: flex;
+  margin: 16px;
+  padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 5px 10px 18px #006655;
+  width: 50%;
+  float: left;
+}
+.d-block{
+   height:300px;
+   width:300px;
+   position: relative;
+   left:200px;
+}
+h4{
+  text-align:center;
+}
+.carousel-inner{
+  position: relative;
+  top:-10px;
+}
+.othertypes{
+  width:150px;
+  background-color: white;
+  color:#006655;
+}
+
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.tp-card {width: 30%;}
+.example-small-box{width: 30%;}
+.tp-card1{width: 40%;}
+.symptoms{width: 40%;}
+.types{width: 50%;}
+}
+
+@media only screen and (max-width: 600px) {
+  /*For phones*/
+  .tp-card {width: 100%;}
+.example-small-box{width: 100%;}
+.tp-card1{width: 100%;}
+.symptoms{width: 100%;}
+.types{width: 100%;}
+}
+
+@media only screen and (max-width: 768){
+   /*For phones*/
+   .tp-card {width: 100%;}
+.example-small-box{width: 100%;}
+.tp-card1{width: 100%;}
+.symptoms{width: 100%;}
+.types{width: 100%;}
+
+}
+
+@media only screen and (max-width: 992px) {
+  .tp-card {width: 50%;}
+  .example-small-box{width: 50%;}
+  .tp-card1{width: 50%;}
+  .symptoms{width: 50%;}
+  .types{width: 50%;}
+}
+
+.tp-card2 {
+  margin: 16px;
+  max-width: 360px;
+  max-height: 450px;
+  background-color: #ffffff;
+  color:#006655;
+  width: 30%;
+  float: left;
+
+}
+
+.tp-card4{
+  margin: 16px;
+  max-width: 600px;
+  max-height:450px;
+  background-color: #ffffff;
+  color:#006655;
+  width: 40%;
+  float: left;
+
+}
+
+.prop{
+  border-radius: 50%;
+  
+}

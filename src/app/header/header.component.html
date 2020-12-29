@@ -1,0 +1,102 @@
+<mat-toolbar class="toolbar">
+  <img src="../assets/Care2Cure1.png" class="logo">
+  <span class="titlee">Care2Cure</span>
+  <span class="caption">You matter to Us</span>
+  <span class = "signup"></span>
+  <button *ngIf="profile"  mat-button routerLink="/profile">
+    <!-- <mat-icon class="prof">account_circle</mat-icon> -->
+    <i  class="fa fa-user fa-3x"></i>
+  </button>
+ <div class="usercontrol">
+  
+ <button mat-raised-button class="login" (click)="show()"> <mat-icon>accessibility_new</mat-icon>{{ log_detail }}</button>
+</div>
+
+  </mat-toolbar>
+  <div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-footer">
+          <button type="button" class="btn-dark" data-dismiss="modal" (click) = "hide()" mat-icon-button><mat-icon>clear</mat-icon></button>
+      </div>
+        <img src="../assets/profiledefaultpic.png" >
+        <div class="modal-body">
+            <form [formGroup]="registerForm">
+                <div class="form-group">
+                    <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="Email"/>
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">*Email is required</div>
+                        <div *ngIf="f.email.errors.email">*Email must be a valid email address</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input [type]="visible ? 'password' : 'text'" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" placeholder="Password"  />
+                    <mat-icon class="toggle" matSuffix (click)="visible = !visible">{{visible ? 'visibility_off' : 'visibility'}}</mat-icon>    
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback1">
+                        <div *ngIf="f.password.errors.required">*Password is required</div>
+                        <div *ngIf="f.password.errors.minlength">*Password must be at least 6 characters</div>
+                    </div>
+                  </div>
+              <button type="submit" class="btnn" (click)="onSubmit()" mat-raised-button style="width: 80%;position: relative;left: 50px;">LOGIN</button>
+            </form>
+            <div class="signupfooter">
+              <button mat-button class="signup" (click)="openSignup()"><u>Sign Up?</u></button>
+              <!-- <button type="button" class="btn btn-primary resetpassword"  (click)="hide()"data-toggle="modal" data-target="#exampleModal">
+                Forgot password ?
+              </button> -->
+              <!-- <button mat-raised-button (click)="hide()" type="button" data-toggle="modal" data-target="#exampleModal1">
+                ANONYMOUS USER
+              </button> -->
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reset Password </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="emaildiv">
+          <input type="text" style="position: relative; top: 0;"class="email" placeholder="Email" />
+        </div>
+        <div class="otpdiv">
+        <input type="text" style="position: relative; top: 0;" class="otp" placeholder="OTP" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary getotp">GET OTP</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Anonymous-->
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ANONYMOUS USER</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <br>
+        <br>
+        <input type="text" placeholder="Username"[(ngModel)]="username">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="createanonymous()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
